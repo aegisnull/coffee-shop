@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Gravitas+One|Fjalla+One|Raleway);
+
+* {
+  border: solid 1px red;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 2.5fr 1fr;
+  grid-template-rows: repeat(3, 1fr) 0.3fr repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sidebar main featured featured"
+    "sidebar main featuredsnacks changes"
+    "sidebar main featuredsnacks feature"
+    "sidebar main featuredsnacks space"
+    "sidebar main message gallery"
+    "sidebar main drinks drinks";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-image: url("../img/menu-pattern.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 230px;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 4;
+  text-transform: uppercase;
+}
+
+.sidebar__inner {
+  border: 2px solid #ab9178;
+  padding: 20px;
+}
+
+.sidebar__logo {
+  margin: 5px auto 10px auto;
+  display: block;
+}
+
+.sidebar__division {
+  height: 9px;
+  margin: 0 19px;
+  margin: 20px 0;
+  border: none;
+  background-position: center;
+}
+
+.sidebar__navigation {
+  list-style-type: none;
+  color: #ab9178;
+  font-size: 20px;
+  line-height: 47px;
+  padding: 0;
+  margin: 15px 0;
+  font-family: "Fjalla One", sans-serif;
+  position: relative;
+  text-decoration: none;
+}
+
+.sidebar__navigation_item {
+  text-decoration: none;
+}
+
+.sidebar__navigation_item:visited {
+  text-decoration: none;
+}
+
+.sidebar__contact {
+  font-family: "Raleway", sans-serif;
+}
+
+.sidebar__contact_title {
+  color: #ab9178;
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  line-height: 1.1;
+}
+
+.sidebar__contact_text {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 0;
+  font-weight: bolder;
+  margin: 0 0 10px;
+  margin-bottom: 0;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.sidebar__contact_social {
+  width: 30px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.main {
+  grid-area: main;
+  background-color: #d4e9e2;
+  text-align: center;
+  padding: 50% 15%;
+  height: 100%;
+}
+
+.main-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-weight: bolder;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.main-button {
+  display: block;
+  width: 150px;
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #0f72e5;
+  border-radius: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.featured {
+  grid-area: featured;
+}
+
+.featuredsnacks {
+  grid-area: featuredsnacks;
+}
+
+.changes {
+  grid-area: changes;
+}
+
+.feature {
+  grid-area: feature;
+}
+
+.space {
+  grid-area: space;
+}
+
+.gallery {
+  grid-area: gallery;
+}
+
+.message {
+  grid-area: message;
+}
+
+.drinks {
+  grid-area: drinks;
+}

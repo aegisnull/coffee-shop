@@ -11,12 +11,12 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "sidebar main featured featured"
-    "sidebar main featuredsnacks changes"
-    "sidebar main featuredsnacks feature"
-    "sidebar main featuredsnacks space"
-    "sidebar main message gallery"
-    "sidebar main drinks drinks";
+    "sidebar main content content"
+    "sidebar main content content"
+    "sidebar main content content"
+    "sidebar main content content"
+    "sidebar main content content"
+    "sidebar main content content";
 }
 
 .sidebar {
@@ -136,6 +136,22 @@
   color: #ffffff;
   text-decoration: none;
   padding: 8px 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "featured featured"
+    "featuredsnacks changes"
+    "featuredsnacks feature"
+    "featuredsnacks space"
+    "message gallery"
+    "drinks drinks";
+  grid-area: content;
 }
 
 .featured {

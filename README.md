@@ -7,7 +7,9 @@ HTML, CSS
 ## Structure
 The main structure which consists of a CSS Grid, is divided by 4 columns and 6 rows in the following layout:
 
-<img width="800" alt="Screen Shot 2022-04-18 at 9 31 55 a m" src="https://user-images.githubusercontent.com/27663011/163840964-ca7549af-c6c3-4c78-91cb-9034d977a569.png">
+
+<img width="800" alt="Screen Shot 2022-04-18 at 12 13 20 p m" src="https://user-images.githubusercontent.com/27663011/163862628-ba90cc67-01ff-46fe-9b4f-8cc7660d5e0e.png">
+
 
 ## Current progress
 Currently only the sidebar of the layout is finished

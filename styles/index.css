@@ -185,15 +185,20 @@
 }
 
 .featuredsnacks__title {
-  font-size: 12px;
+  font-size: 20px;
+  line-height: 1.1;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
 }
 
 .featuredsnacks__product {
-  font-size: 12px;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
 }
 
 .featuredsnacks__product-description {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .changes {

@@ -128,12 +128,15 @@
 }
 
 .main-button {
+  background-color: #0f72e5;
+}
+
+.button {
   display: block;
   width: 150px;
   position: relative;
   margin: 10px auto;
   text-align: center;
-  background-color: #0f72e5;
   border-radius: 20px;
   color: #ffffff;
   text-decoration: none;
@@ -215,7 +218,15 @@
 
 .message {
   grid-area: message;
-  background-color: royalblue;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message__button {
+  background-color: #0f72e5;
 }
 
 .drinks {

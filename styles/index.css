@@ -106,7 +106,9 @@
   grid-area: main;
   background-color: #d4e9e2;
   text-align: center;
-  height: 100vh;
+  position: fixed;
+  height: 100%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,12 +159,38 @@
 
 .featured {
   grid-area: featured;
-  background-color: burlywood;
+  background-image: url("../img/featured.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+}
+
+.featured_img-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(79, 77, 77, 0.5);
 }
 
 .featuredsnacks {
   grid-area: featuredsnacks;
-  background-color: gainsboro;
+  background-color: #947b65;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featuredsnacks__title {
+  font-size: 12px;
+}
+
+.featuredsnacks__product {
+  font-size: 12px;
+}
+
+.featuredsnacks__product-description {
+  font-size: 12px;
 }
 
 .changes {
